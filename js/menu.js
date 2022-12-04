@@ -24,6 +24,14 @@ function load() {
             }
         })
     })
+    submenus.forEach((submenu) => {
+        submenu.addEventListener('keyup', (event) => {
+            if (event.key === 'Escape' && submenu.classList.contains('active')) {
+                submenu.classList.remove('active')
+                submenu.querySelector('.megamenu-navitem').focus()
+            }
+        })
+    })
 
     document.addEventListener('click', (event) => {
         resetSubmenus(event)
