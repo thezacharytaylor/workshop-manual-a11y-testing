@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>CampSpots</title>
     <link rel="stylesheet" type="text/css" href="./styles.scss" />
   </head>
   <body class="page-home">
     <include src="_includes/header.html"></include>
-    <div id="main">
+    <main id="main">
       <form class="main-search form-wrap layout" id="home-form">
+        <h2 class="visually-hidden">Search</h2>
         <div class="form-field">
           <span class="label">Where to?</span>
           <div class="custom-input">
@@ -23,16 +24,20 @@
           </div>
         </div>
         <div class="form-field form-submit">
-          <button class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');">
-            <span class="icon-lookingglass-white"></span>
+          <button
+            class="btn-submit btn-lookingglass"
+            onclick="javascript: alert('Submitted!');"
+            aria-label="Search Submit"
+          >
+            <span class="icon-lookingglass-white" aria-hidden="true"></span>
           </button>
         </div>
       </form>
-      <div class="wide-layout two-part-overlap">
+      <section class="wide-layout two-part-overlap">
         <div class="content-block-wrap">
-          <img src="images/tents.jpg" />
+          <img src="images/tents.jpg" alt="" />
           <div class="content-block">
-            <h3>Rest and relaxation is a part of life</h3>
+            <h2 class="h3-style">Rest and relaxation is a part of life</h2>
             <div>
               We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily
               grind of life is essential for maintaining balance and positive well-being.
@@ -50,7 +55,7 @@
           </div>
         </div>
         <div class="link-block">
-          <h4>Places to visit</h4>
+          <h3 class="h4-style">Places to visit</h3>
           <div class="link-list">
             <div>
               <a href="#">New York</a>
@@ -64,11 +69,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="layout three-parts">
+      </section>
+      <section class="layout three-parts">
         <div class="item green">
           <img src="/images/icons/icon-treetag.svg" />
-          <div class="header">Find your next adventure</div>
+          <h3 class="header">Find your next adventure</h3>
           <div>
             Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.
@@ -76,7 +81,7 @@
         </div>
         <div class="item yellow">
           <img src="/images/icons/icon-backpack.svg" />
-          <div class="header">Know what to pack and what to leave at home</div>
+          <h3 class="header">Know what to pack and what to leave at home</h3>
           <div>
             Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.
@@ -84,14 +89,14 @@
         </div>
         <div class="item blue">
           <img src="/images/icons/icon-kayak.svg" />
-          <div class="header">Arrange the best activities</div>
+          <h3 class="header">Arrange the best activities</h3>
           <div>
             Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <include src="_includes/footer.html"></include>
     <script src="/js/menu.js"></script>
   </body>
